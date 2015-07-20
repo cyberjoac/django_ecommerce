@@ -167,3 +167,8 @@ LOGGING = {
         },
     }
 }
+
+try:
+    from deploy.settings_prod import *
+except ImportError:
+    pass
